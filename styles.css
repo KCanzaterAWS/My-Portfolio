@@ -1,0 +1,40 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text color */
+}
+
+header {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.about {
+    background-color: #ffffff; /* White background for about section */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects {
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333; /* Dark background for footer */
+    color: white; /* White text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
