@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Technical Portfolio</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Navigation */
+        .nav {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+        }
+
+        .nav-item {
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            color: white;
+            border-radius: 0.5rem;
+            background: linear-gradient(to right, #7e3ff2, #3b82f6);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .nav-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-item.active {
+            background-color: #8257e6;
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+            border-radius: 1rem;
+            padding: 4rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .hero:hover {
+            transform: scale(1.02);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            background: linear-gradient(to right, #7e3ff2, #3b82f6);
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+
+        .hero h2 {
+            color: #666;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            color: #555;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Buttons */
+        .button-group {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .button {
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .button-primary {
+            background: linear-gradient(to right, #7e3ff2, #3b82f6);
+            color: white;
+            border: none;
+        }
+
+        .button-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-secondary {
+            background-color: white;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+
+        .button-secondary:hover {
+            transform: translateY(-3px);
+            background-color: #f0f0f0;
+        }
+
+        /* Technical Focus Section */
+        .technical-focus {
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .technical-focus h3 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .focus-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .focus-item {
+            background: #fff;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .focus-item:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 4rem;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .hero {
+                padding: 3rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .nav {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="nav">
+            <a href="#" class="nav-item active">📝 About</a>
+            <a href="#" class="nav-item">🔨 Portfolio</a>
+            <a href="#" class="nav-item">💼 Experience</a>
+            <a href="#" class="nav-item">📧 Contact</a>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Hello, I'm [Your Name]</h1>
+            <h2>Cloud Computing Engineer & DevOps Enthusiast</h2>
+            <p>I transform complex infrastructure challenges into elegant cloud solutions. With a passion for automation and scalable architecture, I've helped companies modernize their infrastructure and embrace the cloud-native future.</p>
+            <div class="button-group">
+                <a href="#" class="button button-primary">Get in Touch</a>
+                <a href="#" class="button button-secondary">View Projects</a>
+            </div>
+        </section>
+
+        <!-- Technical Focus -->
+        <section class="technical-focus">
+            <h3>Technical Focus</h3>
+            <div class="focus-items">
+                <div class="focus-item">☁️ Cloud Architecture & Infrastructure</div>
+                <div class="focus-item">⚙️ Infrastructure as Code</div>
+                <div class="focus-item">🔄 DevOps & CI/CD</div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2024 [Your Name] - All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
